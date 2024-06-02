@@ -1,7 +1,7 @@
 {
 	"name": "graphql.tech.unit-code",
 	"dockerComposeFile": "../docker-compose.yml",
-	// "postCreateCommand": "./.devcontainer/postCreateCommand.sh",
+	"postCreateCommand": "./.devcontainer/postCreateCommand.sh",
 	"workspaceFolder": "/app",
 	"service": "app",
 	"customizations": {
