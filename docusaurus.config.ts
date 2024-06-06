@@ -3,54 +3,65 @@ import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
 
 const config: Config = {
-	title: "My Site",
-	tagline: "Dinosaurs are cool",
-	favicon: "img/favicon.ico",
+	title: "GraphQL Tips",
+	tagline: "webエンジニア めんだこの技術部屋",
+	favicon: "img/mendako.png",
 
 	// Set the production url of your site here
-	url: "https://your-docusaurus-site.example.com",
+	url: "https://graphql.tech.unit-code.com",
 	// Set the /<baseUrl>/ pathname under which your site is served
 	// For GitHub pages deployment, it is often '/<projectName>/'
 	baseUrl: "/",
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
-	organizationName: "facebook", // Usually your GitHub org/user name.
-	projectName: "docusaurus", // Usually your repo name.
+	organizationName: "sh-yamaga", // Usually your GitHub org/user name.
+	projectName: "docusaurus-graphql", // Usually your repo name.
 
-	onBrokenLinks: "throw",
+	onBrokenLinks: "warn",
 	onBrokenMarkdownLinks: "warn",
 
 	// Even if you don't use internationalization, you can use this field to set
 	// useful metadata like html lang. For example, if your site is Chinese, you
 	// may want to replace "en" with "zh-Hans".
 	i18n: {
-		defaultLocale: "en",
-		locales: ["en"],
+		defaultLocale: "ja",
+		locales: ["ja"],
 	},
 
 	presets: [
 		[
-			"classic",
+			"@docusaurus/preset-classic",
 			{
+				// Debug defaults to true in dev, false in prod
+				debug: undefined,
+				// Will be passed to @docusaurus/theme-classic.
+				theme: {
+					customCss: ["./src/css/custom.css"],
+				},
+				// Will be passed to @docusaurus/plugin-content-docs (false to disable)
 				docs: {
 					sidebarPath: "./sidebars.ts",
-					// Please change this to your repo.
-					// Remove this to remove the "edit this page" links.
-					editUrl:
-						"https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+					showLastUpdateTime: true,
 				},
+				// Will be passed to @docusaurus/plugin-content-blog (false to disable)
 				blog: {
 					showReadingTime: true,
-					// Please change this to your repo.
-					// Remove this to remove the "edit this page" links.
-					editUrl:
-						"https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
 				},
-				theme: {
-					customCss: "./src/css/custom.css",
+				// Will be passed to @docusaurus/plugin-content-pages (false to disable)
+				pages: {},
+				// Will be passed to @docusaurus/plugin-sitemap (false to disable)
+				sitemap: {},
+				// Will be passed to @docusaurus/plugin-google-gtag (only enabled when explicitly specified)
+				gtag: {
+					trackingID: "G-9487XNRNFL",
+					anonymizeIP: true,
 				},
-			} satisfies Preset.Options,
+				// Will be passed to @docusaurus/plugin-google-tag-manager (only enabled when explicitly specified)
+				// googleTagManager: {},
+				// DEPRECATED: Will be passed to @docusaurus/plugin-google-analytics (only enabled when explicitly specified)
+				// googleAnalytics: {},
+			},
 		],
 	],
 
@@ -58,19 +69,18 @@ const config: Config = {
 		// Replace with your project's social card
 		image: "img/docusaurus-social-card.jpg",
 		navbar: {
-			title: "My Site",
+			title: "GraphQL Tips",
 			logo: {
-				alt: "My Site Logo",
-				src: "img/logo.svg",
+				alt: "めんだこ",
+				src: "img/mendako.png",
 			},
 			items: [
 				{
 					type: "docSidebar",
-					sidebarId: "tutorialSidebar",
+					sidebarId: "graphqlSidebar",
 					position: "left",
-					label: "Tutorial",
+					label: "GraphQL",
 				},
-				{ to: "/blog", label: "Blog", position: "left" },
 				{
 					href: "https://github.com/facebook/docusaurus",
 					label: "GitHub",
@@ -82,11 +92,11 @@ const config: Config = {
 			style: "dark",
 			links: [
 				{
-					title: "Docs",
+					title: "Site",
 					items: [
 						{
-							label: "Tutorial",
-							to: "/docs/intro",
+							label: "unit-code.com",
+							href: "https://unit-code.com",
 						},
 					],
 				},
@@ -94,34 +104,30 @@ const config: Config = {
 					title: "Community",
 					items: [
 						{
-							label: "Stack Overflow",
-							href: "https://stackoverflow.com/questions/tagged/docusaurus",
-						},
-						{
-							label: "Discord",
-							href: "https://discordapp.com/invite/docusaurus",
-						},
-						{
-							label: "Twitter",
-							href: "https://twitter.com/docusaurus",
+							label: "X (Twitter)",
+							href: "https://x.com/mendako_web",
 						},
 					],
 				},
 				{
-					title: "More",
+					title: "Support",
 					items: [
 						{
-							label: "Blog",
-							to: "/blog",
+							label: "運営者情報",
+							href: "https://unit-code.com/owner/",
 						},
 						{
-							label: "GitHub",
-							href: "https://github.com/facebook/docusaurus",
+							label: "プライバシーポリシー",
+							href: "https://unit-code.com/privacy/",
+						},
+						{
+							label: "お問い合わせ",
+							href: "https://unit-code.com/contact/",
 						},
 					],
 				},
 			],
-			copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+			copyright: `Copyright © ${new Date().getFullYear()} unit-code.com`,
 		},
 		prism: {
 			theme: prismThemes.github,
