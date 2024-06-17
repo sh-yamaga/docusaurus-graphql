@@ -7,9 +7,6 @@ tags:
   - 和訳
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # はじめに
 
 > GraphQLについて、その仕組みと使い方を学びます。GraphQLサービスの構築方法に関するドキュメントをお探しですか？[さまざまな言語でGraphQLを実装するためのライブラリ](https://graphql.org/community/tools-and-libraries/)があります。実践的なチュートリアルで深く学ぶには、[利用可能なトレーニングコース](https://graphql.org/community/resources/training-courses/)をご覧ください。
