@@ -725,7 +725,7 @@ mutation CreateReviewForEpisode($ep: Episode!, $review: ReviewInput!) {
 
 ## インライン・フラグメント (Inline Fragments)
 
-他の多くの型システムと同様に、GraphQLスキーマにはインターフェースとユニオン型を定義する機能が含まれています。[これからについて、詳しくはスキーマガイドを参照](schema/#interfaces)。  
+他の多くの型システムと同様に、GraphQLスキーマにはインターフェースとユニオン型を定義する機能が含まれています。[これらについて、詳しくはスキーマガイドを参照](schema/#interfaces)。  
 
 インターフェイスやユニオン型を返すフィールドを問い合わせる場合、*インライン・フラグメント*を使用して、基礎となる具象型のデータにアクセスする必要があります。例で見るのが一番簡単です。
 
@@ -840,4 +840,4 @@ name of the object type at that point.
 
 上記のクエリでは、`search` は３つのオプションのうちの１つであるユニオン型を返します。`typename` フィールドがなければ、クライアントから異なる型を見分けることは不可能でしょう。  
 
-GraphQLサービスはいくつかのメタ・フィールドを提供し、残りは(Introspection)[イントロスペクション](https://graphql.org/learn/introspection/)システムを公開するために使用されます。
+GraphQLサービスはいくつかのメタ・フィールドを提供し、残りは[イントロスペクション (Introspection)](https://graphql.org/learn/introspection/)システムを公開するために使用されます。
