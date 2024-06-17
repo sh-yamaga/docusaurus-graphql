@@ -32,7 +32,7 @@ import TabItem from '@theme/TabItem';
 
 <TabItem value="response" label="Response">
 
-```json
+```graphql
 {
   "data": {
     "hero": {
@@ -74,7 +74,7 @@ import TabItem from '@theme/TabItem';
 
 <TabItem value="response" label="Response">
 
-```json
+```graphql
 {
   "data": {
     "hero": {
@@ -122,7 +122,7 @@ import TabItem from '@theme/TabItem';
 
 <TabItem value="response" label="Response">
 
-```json
+```graphql
 {
   "data": {
     "human": {
@@ -156,7 +156,7 @@ RESTのようなシステムでは、リクエストのクエリーパラメー�
 
 <TabItem value="response" label="Response">
 
-```json
+```graphql
 {
   "data": {
     "human": {
@@ -201,7 +201,7 @@ RESTのようなシステムでは、リクエストのクエリーパラメー�
 
 <TabItem value="response" label="Response">
 
-```json
+```graphql
 {
   "data": {
     "empireHero": {
@@ -253,7 +253,7 @@ fragment comparisonFields on Character {
 
 <TabItem value="response" label="Response">
 
-```json
+```graphql
 {
   "data": {
     "leftComparison": {
@@ -343,7 +343,7 @@ fragment comparisonFields on Character {
 
 <TabItem value="response" label="Response">
 
-```json
+```graphql
 {
   "data": {
     "leftComparison": {
@@ -425,7 +425,7 @@ query HeroNameAndFriends {
 
 <TabItem value="response" label="Response">
 
-```json
+```graphql
 {
   "data": {
     "hero": {
@@ -487,7 +487,7 @@ query HeroNameAndFriends($episode: Episode) {
 
 <TabItem value="variable" label="Variable">
 
-```json
+```graphql
 {
   "episode": "JEDI"
 }
@@ -497,7 +497,7 @@ query HeroNameAndFriends($episode: Episode) {
 
 <TabItem value="response" label="Response">
 
-```json
+```graphql
 {
   "data": {
     "hero": {
@@ -595,7 +595,7 @@ query Hero($episode: Episode, $withFriends: Boolean!) {
 
 <TabItem value="response-false" label="Response(false)">
 
-```json
+```graphql
 {
   "data": {
     "hero": {
@@ -620,7 +620,7 @@ query Hero($episode: Episode, $withFriends: Boolean!) {
 
 <TabItem value="response-true" label="Response(true)">
 
-```json
+```graphql
 {
   "data": {
     "hero": {
@@ -696,7 +696,7 @@ mutation CreateReviewForEpisode($ep: Episode!, $review: ReviewInput!) {
 
 <TabItem value="response" label="Response">
 
-```json
+```graphql
 {
   "data": {
     "createReview": {
@@ -761,7 +761,7 @@ query HeroForEpisode($ep: Episode!) {
 
 <TabItem value="response" label="Response">
 
-```json
+```graphql
 {
   "data": {
     "hero": {
@@ -813,7 +813,7 @@ name of the object type at that point.
 
 <TabItem value="response" label="Response">
 
-```json
+```graphql
 {
   "data": {
     "search": [

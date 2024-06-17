@@ -52,7 +52,7 @@ GraphQLサービスが実行されると（通常はWebサービス上のURLで�
 
 次のようなJSONを生成します。
 
-```json
+```graphql
 {
   "me": {
     "name": "Luke Skywalker"
